@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Midtby - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">David Midtby</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home">
+    <h1>Hi, I’m David Midtby 👋</h1>
+    <p>Welcome to my personal portfolio website</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a 20-year-old from Norway, passionate about learning new skills and building projects. I love coding, cars, and exploring new technologies.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Short description of your first project.</p>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Short description of your second project.</p>
+      </div>
+      <div class="project">
+        <h3>Project 3</h3>
+        <p>Short description of your third project.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:david.midtby@gmal.com">david.midtby@gmal.com</a></p>
+    <div class="socials">
+      <a href="https://github.com/DavidMidtby" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/david-siljeholm-midtby-794393322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/david.midtby" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://pin.it/1kOE0smiN" target="_blank"><i class="fab fa-pinterest"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 David Midtby</p>
+  </footer>
+
+  <!-- Smooth Scroll JS -->
+  <script>
+    const links = document.querySelectorAll('nav ul li a');
+    for (const link of links) {
+      link.addEventListener('click', clickHandler);
+    }
+    function clickHandler(e) {
+      e.preventDefault();
+      const href = this.getAttribute('href');
+      document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
